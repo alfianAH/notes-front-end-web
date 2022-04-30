@@ -4,12 +4,149 @@
     box-sizing: border-box;
 }
 
+a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+aside{
+    float: right;
+    width: 30%;
+    padding: 8px;
+}
+
 body{
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
 }
 
+button, input, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+footer{
+    padding: 20px 8px;
+}
+
+label {
+    display: inline-block;
+}
+
+main{
+    overflow: auto;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+}
+
+.bg-dark{
+    background-color: #343A40;
+}
+
+.bg-light{
+    background-color: #F8F9FA;
+}
+
+.btn{
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    padding: .375rem .75rem;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: .25rem;
+    background-color: transparent;
+    border: 1px solid transparent;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-success{
+    color: #fff;
+    background-color: #198754;
+    border-color: #198754;
+}
+
+.btn-success:hover {
+    color: #fff;
+    background-color: #157347;
+    border-color: #146c43;
+}
+
+.card{
+    border-radius: 10px;
+    background-color: #B5E9F3;
+    padding: 24px;
+    margin-bottom: 10px;
+}
+
+.danger{
+    color: #DC3545;
+}
+
+.container{
+    margin: 0px 72px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-label {
+    margin-bottom: .5rem;
+}
+
+.header{
+    border-radius: 0px 0px 20px 20px;
+}
+
+.mb-3{
+    margin-bottom: 1rem !important;;
+}
+
 .not-resizable {
     resize: none;
- }
+}
+
+.profile{
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#content{
+    float: left;
+    width: 70%;
+    padding: 8px;
+}
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
