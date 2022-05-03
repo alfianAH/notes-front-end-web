@@ -123,6 +123,41 @@ textarea {
     color: #DC3545;
 }
 
+.dropdown-menu {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: 0;
+    font-size: 1rem;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #1e2125;
+    background-color: #e9ecef;
+}
+
 .form-control {
     display: block;
     width: 100%;
@@ -186,6 +221,10 @@ textarea {
     width: 30px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.show{
+    display: block !important;
 }
 
 .text-truncate{
