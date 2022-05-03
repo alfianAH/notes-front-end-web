@@ -77,6 +77,18 @@ textarea {
     margin-right: 5px;
 }
 
+.btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    color: #fff;
+    background-color: #bb2d3b;
+    border-color: #b02a37;
+}
+
 .btn-icon-text:hover{
     background-color: rgba(33, 37, 41, 0.3);
 }
@@ -186,6 +198,10 @@ textarea {
 
 .header{
     border-radius: 0px 0px 20px 20px;
+}
+
+.hidden{
+    display: none !important;
 }
 
 .mb-3{

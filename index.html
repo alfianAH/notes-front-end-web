@@ -122,20 +122,39 @@
         </div>
 
         <aside>
-            <article class="card">
+            <article class="card" id="create-form">
                 <h1 class="mb-3">Create Note</h1>
-                <form action="." method="post">
+                <form action="javascript:void(0);" method="POST" onsubmit="createNote()">
                     <div class="mb-3">
-                        <label for="title" class="form-label">Title</label>
-                        <input type="text" placeholder="Input title" name="title" class=" form-control">
+                        <label for="title" class="form-label">Title<span class="danger">*</span></label>
+                        <input type="text" placeholder="Input title" name="title" id="note-title" class=" form-control" required>
                     </div>
 
                     <div class="mb-3">
-                        <label for="content" class="form-label">Content</label>
-                        <textarea name="content" rows="3" placeholder="Fill the content..." class="not-resizable form-control"></textarea>
+                        <label for="content" class="form-label">Content<span class="danger">*</span></label>
+                        <textarea name="content" rows="3" placeholder="Fill the content..."  id="note-content" class="not-resizable form-control" required></textarea>
                     </div>
 
-                    <button type="submit" class="btn btn-success">Submit</button>
+                    <button type="submit" class="btn btn-success" id="submit-note">Submit</button>
+                </form>
+            </article>
+
+            <article class="card hidden" id="update-form">
+                <h1 class="mb-3">Update Note</h1>
+                <form action="javascript:void(0);" method="POST">
+                    <div class="mb-3">
+                        <label for="title" class="form-label">Title<span class="danger">*</span></label>
+                        <input type="text" placeholder="Input title" name="title" id="note-title" class=" form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="content" class="form-label">Content<span class="danger">*</span></label>
+                        <textarea name="content" rows="3" placeholder="Fill the content..."  id="note-content" class="not-resizable form-control" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-success">Update</button>
+
+                    <button type="button" class="btn btn-danger" id="cancel-update" onclick="cancelUpdate()">Cancel</button>
                 </form>
             </article>
         </aside>
@@ -154,5 +173,7 @@
     </footer>
 
     <script src="assets/js/dropdown.js"></script>
+    <script src="assets/js/storage.js"></script>
+    <script src="assets/js/crud.js"></script>
 </body>
 </html>
