@@ -60,7 +60,6 @@ textarea {
 
 .btn{
     display: inline-block;
-    font-weight: 400;
     line-height: 1.5;
     text-align: center;
     vertical-align: middle;
@@ -71,6 +70,23 @@ textarea {
     background-color: transparent;
     border: 1px solid transparent;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn img{
+    float: left;
+    margin-right: 5px;
+}
+
+.btn-icon-text:hover{
+    background-color: rgba(33, 37, 41, 0.3);
+}
+
+.btn-icon-text-danger:hover{
+    background-color: rgba(220, 53, 69, 0.3);
+}
+
+.bottom-right{
+    float: inline-end;
 }
 
 .btn-success{
@@ -90,14 +106,21 @@ textarea {
     background-color: #B5E9F3;
     padding: 24px;
     margin-bottom: 10px;
+    overflow: auto;
+}
+
+.container{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.d-flex {
+    display: flex !important;
 }
 
 .danger{
     color: #DC3545;
-}
-
-.container{
-    margin: 0px 72px;
 }
 
 .form-control {
@@ -118,12 +141,40 @@ textarea {
     margin-bottom: .5rem;
 }
 
+.fs-3 {
+    font-size: calc(1.3rem + .6vw) !important;
+}
+
+.fw-bold {
+    font-weight: 700 !important;
+}
+
 .header{
     border-radius: 0px 0px 20px 20px;
 }
 
 .mb-3{
-    margin-bottom: 1rem !important;;
+    margin-bottom: 1rem !important;
+}
+
+.mt-3{
+    margin-top: 1rem !important;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.navbar > .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .not-resizable {
@@ -131,10 +182,22 @@ textarea {
 }
 
 .profile{
-    height: 48px;
-    width: 48px;
+    height: 30px;
+    width: 30px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.text-truncate{
+    display: -webkit-box;;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.text-white{
+    color: #F8F9FA;
 }
 
 #content{
@@ -148,5 +211,33 @@ textarea {
     aside {
         width: 100%;
         padding: 0;
+    }
+}
+
+@media (min-width: 576px) {
+    .container{
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768) {
+    .container{
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container{
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1140px;
+    }
+
+    .fs-3 {
+        font-size: 1.75rem !important;
     }
 }
