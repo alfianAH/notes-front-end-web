@@ -129,12 +129,6 @@ textarea {
     overflow: auto;
 }
 
-.center{
-    display: block;
-    margin: 0 auto;
-    width: 50%;
-}
-
 .container{
     width: 100%;
     margin-right: auto;
@@ -265,14 +259,6 @@ textarea {
     vertical-align: top;
 }
 
-.text-truncate{
-    display: -webkit-box;;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-}
-
 .text-white{
     color: #F8F9FA;
 }
@@ -285,9 +271,10 @@ textarea {
 
 @media screen and (max-width: 1000px) {
     #content,
+    .navbar,
     aside {
         width: 100%;
-        padding: 0;
+        padding: 16px;
     }
 }
 

@@ -110,7 +110,6 @@ function renderData() {
         
         // Create tag for content
         let content = document.createElement('p')
-        content.classList.add('text-truncate');
         content.innerHTML = note.content;
 
         let actionButtons = `
