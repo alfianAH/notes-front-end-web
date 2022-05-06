@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
 
 *{
     box-sizing: border-box;
@@ -19,6 +19,9 @@ body{
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 button, input, textarea {
@@ -30,6 +33,7 @@ button, input, textarea {
 
 footer{
     padding: 20px 8px;
+    margin-top: auto;
 }
 
 label {
@@ -38,6 +42,10 @@ label {
 
 main{
     overflow: auto;
+}
+
+table{
+    text-align: left;
 }
 
 textarea {
@@ -119,6 +127,12 @@ textarea {
     padding: 24px;
     margin-bottom: 10px;
     overflow: auto;
+}
+
+.center{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
 }
 
 .container{
@@ -204,6 +218,11 @@ textarea {
     display: none !important;
 }
 
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
 .mb-3{
     margin-bottom: 1rem !important;
 }
@@ -233,14 +252,17 @@ textarea {
 }
 
 .profile{
-    height: 30px;
-    width: 30px;
     border-radius: 50%;
     object-fit: cover;
 }
 
 .show{
     display: block !important;
+}
+
+.table > :not(caption) > * > * {
+    padding: .5rem .5rem;
+    vertical-align: top;
 }
 
 .text-truncate{
